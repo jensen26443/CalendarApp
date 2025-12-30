@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    android:orientation="horizontal">
+
+    <!-- 时间标签 -->
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="00:00"
+        android:textSize="12sp"
+        android:textColor="@android:color/black"
+        android:background="@drawable/cell_border" />
+
+    <!-- 周一到周日容器 -->
+    <LinearLayout
+        android:id="@+id/ll_mon"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_tue"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_wed"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_thu"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_fri"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sat"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_sun"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:background="@drawable/cell_border"
+        android:padding="2dp"/>
+
+</LinearLayout>

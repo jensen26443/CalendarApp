@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_blue"
+    tools:context=".SubscriptionActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- 订阅名称 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="订阅名称">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@android:color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <!-- 订阅地址 -->
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:hint="订阅地址">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/et_url"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:background="@android:color/white"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Spinner
+            android:id="@+id/spinner_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:padding="12dp"
+            android:entries="@array/update_intervals"
+            android:background="@android:color/white"/>
+
+        <!-- 按钮 -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn_cancel"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginEnd="8dp"
+                android:text="取消"
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="8dp"
+                android:text="保存"
+                android:backgroundTint="@color/blue"
+                android:textColor="@android:color/white" />
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_clear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="清空订阅事件"
+            android:textColor="@android:color/holo_red_dark" />
+
+    </LinearLayout>
+
+</ScrollView>

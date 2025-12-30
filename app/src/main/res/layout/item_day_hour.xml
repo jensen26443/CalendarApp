@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal">
+
+    <!-- 时间 -->
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="60dp"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:text="00:00"
+        android:textColor="@android:color/black"
+        android:textSize="12sp" />
+
+    <!-- 事件区域 -->
+    <FrameLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <!-- 边框 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/cell_border" />
+
+        <!-- 多事件容器 -->
+        <LinearLayout
+            android:id="@+id/event_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="4dp" />
+    </FrameLayout>
+
+</LinearLayout>

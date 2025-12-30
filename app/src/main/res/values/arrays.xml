@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="event_types">
+        <item>工作</item>
+        <item>生活</item>
+        <item>节日</item>
+        <item>订阅</item>
+        <item>导入</item>
+    </string-array>
+
+    <string-array name="reminder_times">
+        <item>5分钟前</item>
+        <item>15分钟前</item>
+        <item>30分钟前</item>
+        <item>1小时前</item>
+        <item>2小时前</item>
+        <item>1天前</item>
+    </string-array>
+    
+    <string-array name="reminder_values">
+        <item>5</item>
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>120</item>
+        <item>1440</item>
+    </string-array>
+    
+    <string-array name="update_intervals">
+        <item>手动</item>
+        <item>每天</item>
+        <item>每周</item>
+        <item>每月</item>
+    </string-array>
+
+
+    <string-array name="view_modes">
+        <item>月</item>
+        <item>周</item>
+        <item>日</item>
+    </string-array>
+
+
+</resources>

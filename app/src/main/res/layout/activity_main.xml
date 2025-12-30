@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/light_blue"
+    tools:context=".MainActivity">
+
+    <!-- 顶部工具栏 -->
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/blue"
+        android:paddingStart="8dp"
+        android:paddingEnd="8dp"
+        app:titleTextColor="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical">
+
+<!--            &lt;!&ndash; 视图切换下拉（日 / 周 / 月） &ndash;&gt;-->
+<!--            <Spinner-->
+<!--                android:id="@+id/spinner_view_mode"-->
+<!--                android:layout_width="80dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:entries="@array/view_modes"-->
+<!--                android:backgroundTint="@android:color/white"-->
+<!--                android:spinnerMode="dropdown"-->
+<!--                android:popupBackground="@android:color/white"-->
+<!--                android:layout_marginLeft="180dp" />-->
+
+            <!-- 视图切换（日 ▾） -->
+
+
+            <!-- 今天按钮 -->
+            <TextView
+                android:id="@+id/btn_view_mode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="190dp"
+                android:paddingHorizontal="12dp"
+                android:paddingVertical="6dp"
+                android:text="月 ▾"
+                android:textColor="@android:color/white"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/btn_today"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="今天"
+                android:textColor="@android:color/holo_red_dark"
+                android:textSize="16sp"
+                android:padding="8dp" />
+
+            <!-- 添加事件按钮 -->
+            <ImageButton
+                android:id="@+id/btn_add_event"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_input_add"
+                android:background="@android:color/transparent"
+                app:tint="@android:color/white" />
+
+            <!-- 更多按钮 -->
+            <ImageButton
+                android:id="@+id/btn_more"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@android:drawable/ic_menu_more"
+                android:background="@android:color/transparent"
+                app:tint="@android:color/white" />
+
+        </LinearLayout>
+    </androidx.appcompat.widget.Toolbar>
+
+    <!-- ViewPager2 -->
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>
